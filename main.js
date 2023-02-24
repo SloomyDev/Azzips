@@ -32,7 +32,7 @@ var gameData = {
         "Upgrade Nevo (Currently Level " +
         gameData.azzipPerClick +
         ") Cost: " +
-        gameData.azzipPerClickCost +
+        (gameData.azzipPerClickCost - 1) +
         " Azzips";
     }
     update("azzipMined", gameData.azzip + " Azzips Mined");
