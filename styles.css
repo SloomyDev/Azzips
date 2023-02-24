@@ -1,0 +1,14 @@
+.azzip-mined {
+    font-size: 500%;
+  }
+  body {
+    /* no . means element type */
+    text-align: center; /* text-align centers text AND children */
+    background-color: rgb(198, 221, 252);
+  }
+  
+  
+  * {
+    /* * applies to all elements, use with caution */
+    outline: none;
+  }
