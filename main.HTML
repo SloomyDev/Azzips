@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Azzip Empire</title>
-    <link rel="icon" type="image/x-icon" href="https://art.pixilart.com/6e9c13b725562f5.ico">
   </head>
   <script src="main.js" charset="utf-8" type="text/javascript"></script>
   <script src="main2.js" charset="utf-8" type="text/javascript"></script>
 
 
   <body>
+    <button onclick="saveGame()">Save</button>
     <p id="azzipMined" , class="azzip-mined">0 Azzips Mined</p>
-    <div id="navigateButtons">
-      <button onclick="tab('mineAzzipMenu')">Azzip Mine</button>
-      <button onclick="tab('shopMenu')">Shop</button>
+    <div style = "position: relative; right: 700px; top: -200px;"id="navigateButtons">
+      <div>
+      <button style="background-color: rgb(230, 212, 250); font-size: 200%; position: relative; width: 180px; height: 60px;"onclick="tab('mineAzzipMenu')">Azzip Mine</button>
+      </div>
+      <div>
+      <button style="background-color: rgb(255, 255, 255); font-size: 200%; position: relative; top: 10px; width: 180px; height: 60px;"onclick="checkTab('shopMenu')" id="shopMenuButton" class="shop-menu-button">
+      <IMG src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-lock-icon-png-image_318067.jpg", style="position: relative; height: 55px">
+      </button>
+      </div>
+      <button style="background-color: rgb(255, 255, 255); font-size: 200%; position: relative; top: 20px; width: 180px; height: 60px;"onclick="tab('yrekab')">
+        <IMG src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-lock-icon-png-image_318067.jpg", style="position: relative; height: 55px">
+      </button>
     </div>
     <div id="mineAzzipMenu">
-      <button onclick="mineAzzip()">Mine for Azzips</button>
+      <button onclick="mineAzzip()" >Mine for Azzips</button>
     </div>
     <div id="shopMenu">
-      <button onclick="buyAzzipPerClick()" id="perClickUpgrade">
+      <button onclick="upgrade1()" id="perClickUpgrade">
         Unlock the Nevo - 50 Azzips
       </button>
+      <button onclick="upgrade1()" id="perClickUpgrade">
+        Hire Rekrow - 2500 Azzips
+      </button>
+    </div>
+    <div id = "shop2Menu">
+      <div id="yrekab">
+        <button onclick="cookEikooc()">Cook the Eikoocs</button>
+      </div>
     </div>
   </body>
 </html>
